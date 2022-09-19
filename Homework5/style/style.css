@@ -66,7 +66,7 @@ body{
     color: #FFFFFF;
 }
 
-.header_button:hover{
+.header_button:hover, .engage_button:hover{
     cursor: pointer;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #0f1fab;
     transition: 1s;
@@ -130,6 +130,12 @@ body{
     font-size: 18px;
     line-height: 13px;
     color: #000000;
+}
+
+.engage_button_1:hover{
+    cursor: pointer;
+    background: #fef4f4;
+    transition: 1s;
 }
 
 .engage_section{
