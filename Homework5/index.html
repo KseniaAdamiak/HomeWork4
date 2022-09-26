@@ -12,149 +12,249 @@
 </head>
 <body>
     <header class="header">
-        <div class="container flex">
-            <div class="logo flex">
-                <img src="./img/header/Icon.svg" alt="logo">
-                <div>
-                    <h6 class="logo_title">
-                        Foundation
-                    </h6>
-                    <p class="logo_text">
-                        Startup landing template
-                    </p>
+        <div class="container ">
+            <div class="header_logo flex">
+                <div class="logo flex">
+                    <img src="./img/header/Icon.svg" alt="logo">
+                    <div>
+                        <h6 class="logo_title">
+                            Foundation
+                        </h6>
+                        <p class="logo_text">
+                            Startup landing template
+                        </p>
+                    </div>
                 </div>
+                <nav class="header_nav flex">
+                    <ul class="header_ul flex">
+                        <li class="header_li">
+                            <a class="header_link" href="#">Home</a>
+                        </li>
+                        <li class="header_li">
+                            <a class="header_link" href="#">Stories</a>
+                        </li>
+                    </ul>
+                    <button class="button">
+                        Get Started
+                    </button>
+                </nav>
             </div>
-            <nav class="header_nav flex">
-                <ul class="header_ul flex">
-                    <li class="header_li">
-                        <a class="header_link" href="#">Home</a>
-                    </li>
-                    <li class="header_li">
-                        <a class="header_link" href="#">Stories</a>
-                    </li>
-                </ul>
-                <button class="header_button">
-                    Get Started
-                </button>
-            </nav>
+            <!-- <div class="flex">
+                <div>
+                    <div>
+                        <h1 class="header_title">
+                            Build stunning websites & apps.
+                        </h1>
+                        <p class="header_text">
+                            Create live segments and target the right people for messages based on their behaviors.
+                        </p>
+                    </div>
+                    <button class="button">
+                        Get Started
+                    </button>
+                    <button class="button button-engage">
+                        Learn More
+                    </button>
+                </div>
+                <div class="container-image">
+                    <img class="container-image-img" src="./img/header/manwithbook.png" alt="man with book">
+                </div>    
+            </div> -->
+                
         </div>
     </header>
     <section class="description">
-        <div class="container flex">
-            <div >
-                <h6 class="description_title">
-                    What is it about?
-                </h6>
-                <p class="description_text">
-                    Building a website for a startup that looks amazing is not a rocket science anymore.
-                </p>
-            </div>
-            <div>
-                <h6 class="description_title">
-                    Who is it for?
-                </h6>
-                <p class="description_text">
-                    Startups, small companies and teams, entrepreneurs and web developers.
-                </p>
-            </div>
+        <div class="container">
+            <div class="description_whole flex">
+                <div class="description_first">
+                    <h6 class="description_title">
+                        What is it about?
+                    </h6>
+                    <p class="description_text">
+                        Building a website for a startup that looks amazing is not a rocket science anymore.
+                    </p>
+                </div>
+                <div class="description_second">
+                    <h6 class="description_title">
+                        Who is it for?
+                    </h6>
+                    <p class="description_text">
+                        Startups, small companies and teams, entrepreneurs and web developers.
+                    </p>
+                </div>
+            </div>    
         </div>
     </section>
     <section class="image">
-        <div class="container flex">
-            <div>
-                <img src="./img/description/The NYT.png" alt="">
+        <div class="image_grid container flex">
+            <img class="image_item" src="./img/description/The NYT.png" alt="The NYT">
+            <img class="image_item" src="./img/description/Forbes.png" alt="Forbes">
+            <img class="image_item" src="./img/description/Apple.png" alt="Apple">
+            <img class="image_item" src="./img/description/Mashable.png" alt="Mashable">
+            <img class="image_item" src="./img/description/WSJ.png" alt="WSJ">
+            <img class="image_item" src="./img/description/Google.png" alt="Google">
+        </div>
+    </section>
+    <section class="inbox">
+        <div class="container flex flex_inbox-column">
+            <div class="container-image">
+                <img class="container-image_img" src="./img/team_inbox/ouch.svg" alt="image_inbox">
             </div>
-            <div>
-                <img src="./img/description/Forbes.png" alt="">
+            <div class="info">
+                <p class="info_pretitle info_pretitle-orange">
+                    Team Inbox
+                </p>
+                <h3 class="info_title">
+                    Manage conversations
+                </h3>
+                <p class="info_text">
+                    One place to manage and respond to all conversations with leads and users. Receive messages from leads.
+                </p>
+                <div class="inbox_response">
+                    <p class="inbox_text">
+                        “Great widgets. Great selection. Great design and <span class="inbox_text-bold"> easy to implement.</span> Definitely a huge time saver for a web developer!”
+                    </p>
+                    <div class="flex flex_start">
+                        <img class="inbox_img" src="./img/team_inbox/Profile Image.svg" alt="person">
+                        <div>
+                            <p class="inbox_name">
+                                Viella Malkovich
+                            </p>
+                            <p class="inbox_position">
+                                Creative Director at Johnson
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="./img/description/Apple.png" alt="">
+        </div>
+    </section>
+    <section class="communicate">
+        <div class="container flex flex_communicate-column">
+            <div class="info">
+                <p class="info_pretitle info_pretitle-blue">
+                    Communicate Better
+                </p>
+                <h3 class="info_title">
+                    Built for busy small teams
+                </h3>
+                <p class="info_text">
+                    Three products that can be used independently or combined together for your company’s needs.
+                </p>
+                <button class="button button_communicate">
+                    Get Started
+                </button>
             </div>
-            <div>
-                <img src="./img/description/Mashable.png" alt="">
+            <div class="container-image">
+                <img class="container-image_img" src="./img/communicate/ouch.png" alt="image_communicate">
             </div>
-            <div>
-                <img src="./img/description/WSJ.png" alt="">
-            </div>
-            <div>
-                <img src="./img/description/Google.png" alt="">
+        </div>
+        <div class="container">
+            <div class="communicate_text flex">
+                <div class="communicate_offer">
+                    <p> 
+                        <span class="communicate_text-bold">
+                            Subscriptions.
+                        </span> 
+                        Foundation works with the tools and services you already use every day.
+                    </p>
+                    <a class="communicate_text-blue" href="#">
+                        Learn more about subscriptions
+                    </a> 
+                </div>
+                <div class="communicate_offer">
+                    <p>
+                        <span class="communicate_text-bold">
+                            Felxible Hours.
+                        </span> 
+                        Get started with our simple snippet of JavaScript or easy to install SDKs for iOS and Android.
+                    </p>
+                    <a class="communicate_text-blue" href="#">
+                        Get more info about hours
+                    </a>
+                </div>
+                <div class="communicate_offer">
+                    <p>
+                        <span class="communicate_text-bold">
+                            Fast Communication.
+                        </span>
+                        We offer measures like 2FA and SSO to ensure the safety of your data.
+                    </p>
+                    <a class="communicate_text-blue" href="#">
+                        Communication guidelines
+                    </a> 
+                </div>
             </div>
         </div>
     </section>
     <section class="engage">
         <div class="container">
-            <div class="engage_section">
-                <h6 class="engage_title">
+            <div>
+                <h6 class="info_pretitle info_pretitle-black">
                     Engage Visitors
                 </h6>
-                <h2 class="engage_subtitle">
+                <h3 class="engage_title">
                     Understand your audience
-                </h2>
+                </h3>
                 <p class="engage_text">
                     Early stage company? Eligible applicants get all of our products for just $49 a month.
                 </p>
-                <button class="engage_button">
+                <button class="button">
                     Get Started
                 </button>
-                <button class="engage_button_1">
+                <button class="button button-engage">
                     Learn More
                 </button>
             </div>
             <div class="engage_grid" >
                 <div class="engage_items">
-                    <img src="./img/engage/ouch1.png" alt="#">
-                    Developers
+                    <img src="./img/engage/ouch1.png" alt="face">
+                    <p>Developers</p> 
                 </div>
                 <div class="engage_items">
-                    <img src="./img/engage/ouch2.png" alt="#">
-                    Entertainment
+                    <img src="./img/engage/ouch2.png" alt="TV">
+                    <p>Entertainment</p> 
                 </div>
                 <div class="engage_items">
-                    <img src="./img/engage/ouch3.png" alt="#">
-                    Athletes
+                    <img src="./img/engage/ouch3.png" alt="man">
+                    <p>Athletes</p>
                 </div>
                 <div class="engage_items">
-                    <img src="./img/engage/ouch4.png" alt="#">
-                    Creators
+                    <img src="./img/engage/ouch4.png" alt="bulb">
+                   <p>Creators</p> 
                 </div>
             </div>
         </div>
     </section>
-    <section class="grid">
+    <section class="image">
+        <div class="image_grid container flex">
+            <img class="image_item" src="./img/description/The NYT.png" alt="The NYT">
+            <img class="image_item" src="./img/description/Forbes.png" alt="Forbes">
+            <img class="image_item" src="./img/description/Apple.png" alt="Apple">
+            <img class="image_item" src="./img/description/Mashable.png" alt="Mashable">
+            <img class="image_item" src="./img/description/WSJ.png" alt="WSJ">
+            <img class="image_item" src="./img/description/Google.png" alt="Google">
+        </div>
+    </section>
+    <section class="surfaces">
         <div class="container">
-            <h2 class="grid_title">
+            <h3 class="surfaces_title">
                  All Surfaces Covered
-             </h2>
-            <p class="grid_text">
+             </h3>
+            <p class="surfaces_text">
                 IOON kills bacteria on your hands, food, tables, laptops, you name it
             </p>
-    
-            <div class=" grid_image">
-                <div class="grid_item">
-                    <img src="./img/grid/Apple.png" alt="">
-                </div>
-                <div class="grid_item">
-                    <img src="./img/grid/Tram.png" alt="">
-                </div>
-                <div class="grid_item">
-                    <img src="./img/grid/Boy.png" alt="">
-                </div>
-                <div class="grid_item">
-                    <img src="./img/grid/Hand.png" alt="">
-                </div>
-                <div class="grid_item">
-                    <img src="./img/grid/Phone.png" alt="">
-                </div>
-                <div class="grid_item">
-                    <img src="./img/grid/Baby.png" alt="">
-                </div>
-                <div class="grid_item">
-                    <img src="./img/grid/Dog.png" alt="">
-                </div>
+            <div class="grid">
+                <img class="grid_img" src="./img/grid/Apple.png" alt="">
+                <img class="grid_img" src="./img/grid/Tram.png" alt="">
+                <img class="grid_img" src="./img/grid/Boy.png" alt="">
+                <img class="grid_img" src="./img/grid/Hand.png" alt="">
+                <img class="grid_img" src="./img/grid/Phone.png" alt="">
+                <img class="grid_img" src="./img/grid/Baby.png" alt="">
+                <img class="grid_img" src="./img/grid/Dog.png" alt="">
             </div>
         </div>
     </div>
     </section>
-
 </body>
 </html>
