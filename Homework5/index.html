@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/carusel.css">
 </head>
 <body>
     <header class="header">
@@ -25,44 +27,53 @@
                         </p>
                     </div>
                 </div>
-                <nav class="header_nav flex">
-                    <ul class="header_ul flex">
-                        <li class="header_li">
-                            <a class="header_link" href="#">Home</a>
-                        </li>
-                        <li class="header_li">
-                            <a class="header_link" href="#">Stories</a>
-                        </li>
-                    </ul>
-                    <button class="button">
-                        Get Started
-                    </button>
-                </nav>
-            </div>
-            <!-- <div class="flex">
-                <div>
-                    <div>
-                        <h1 class="header_title">
-                            Build stunning websites & apps.
-                        </h1>
-                        <p class="header_text">
-                            Create live segments and target the right people for messages based on their behaviors.
-                        </p>
+                <div class="menu">
+                    <input checked type="checkbox" class="checkbox">
+                    <div class="check-wrapper">
+                        <div class="check"></div>
+                        <div class="check"></div>
+                        <div class="check"></div>
                     </div>
-                    <button class="button">
-                        Get Started
-                    </button>
-                    <button class="button button-engage">
-                        Learn More
-                    </button>
+                    <nav class="flex header_nav">
+                        <ul class="flex header_ul">
+                            <li class="header_li">
+                                <a class="header_link" id="hiring_link" href="#">Home</a>
+                            </li>
+                            <li class="header_li">
+                                <a class="header_link" href="#">Stories</a>
+                            </li>
+                        </ul>
+                        <button class="button">
+                            Get Started
+                        </button>
+                    </nav>
                 </div>
-                <div class="container-image">
-                    <img class="container-image-img" src="./img/header/manwithbook.png" alt="man with book">
-                </div>    
-            </div> -->
-                
+            </div>
         </div>
     </header>
+    <section class="main">
+        <div class="container flex main_container">
+                <div>
+                    <h1 class="main_title">
+                        Build stunning websites & apps.
+                    </h1>
+                    <p class="main_text">
+                        Create live segments and target the right people for messages based on their behaviors.
+                    </p>
+                    <div>
+                        <button class="button">
+                            Get Started
+                        </button>
+                        <button id="open_modal" class="button button_white">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="container-image">
+                    <img class="container-image-img" src="./img/header/manwithbook.png" alt="maim img">
+                </div>    
+            </div>
+    </section>
     <section class="description">
         <div class="container">
             <div class="description_whole flex">
@@ -95,10 +106,71 @@
             <img class="image_item" src="./img/description/Google.png" alt="Google">
         </div>
     </section>
+    <section class="features">
+        <div class="container flex flex_features-column">
+            <div class="features_content">
+                <div class="features_text">
+                    <p class="info_pretitle info_pretitle-green">
+                        Features
+                    </p>
+                    <h3 class="info_title">
+                        Easily find leads and customers
+                    </h3>
+                    <p class="info_text">
+                        Send one-off and automated email, push, and in-app messages to people. Create better stories.
+                    </p>
+                </div>
+                <div class="features_jquery">
+                    <div class="features_items">
+                        <div class="features_items-content flex">
+                            <img class="features_icon" src="./img/features/Icon.svg" alt="">
+                            <p class="features_title">
+                                Acquire new customers
+                            </p>
+                        </div>
+                        <p class="features_text-jquery">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                    </div>
+                    <div class="features_items">
+                        <div class="features_items-content flex">
+                            <img class="features_icon" src="./img/features/Icon (1).svg" alt="">
+                            <p class="features_title">
+                                Engage users
+                            </p>
+                        </div>
+                        <p class="features_text-jquery">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                    </div>
+                    <div class="features_items">
+                        <div class="features_items-content flex">
+                            <img class="features_icon" src="./img/features/Icon (2).svg" alt="">
+                            <p class="features_title">
+                                Develop across platforms
+                            </p>
+                        </div>
+                        <p class="features_text-jquery">
+                            Everything you need to start building – including open-source code, documentation.
+                        </p>
+                    </div>
+                </div>
+            <div>
+            <div class="container-image">
+                <div class="features_img">
+                    <img class="image_inspace" src="./img/features/Invision Screen.png" alt="InSpace">
+                </div>
+                <div class="features_img-eye">
+                    <img class="image_eye" src="./img/features/ouch.svg" alt="eye">
+                </div>
+            </div>
+        </div>
+        
+    </section>    
     <section class="inbox">
         <div class="container flex flex_inbox-column">
             <div class="container-image">
-                <img class="container-image_img" src="./img/team_inbox/ouch.svg" alt="image_inbox">
+                <img class="picture container-image_img" src="./img/team inbox/ouch.svg" alt="image_inbox">
             </div>
             <div class="info">
                 <p class="info_pretitle info_pretitle-orange">
@@ -115,7 +187,7 @@
                         “Great widgets. Great selection. Great design and <span class="inbox_text-bold"> easy to implement.</span> Definitely a huge time saver for a web developer!”
                     </p>
                     <div class="flex flex_start">
-                        <img class="inbox_img" src="./img/team_inbox/Profile Image.svg" alt="person">
+                        <img class="inbox_img" src="./img/team inbox/Profile Image.svg" alt="person">
                         <div>
                             <p class="inbox_name">
                                 Viella Malkovich
@@ -141,12 +213,12 @@
                 <p class="info_text">
                     Three products that can be used independently or combined together for your company’s needs.
                 </p>
-                <button class="button button_communicate">
+                <button class="button">
                     Get Started
                 </button>
             </div>
-            <div class="container-image">
-                <img class="container-image_img" src="./img/communicate/ouch.png" alt="image_communicate">
+            <div class="container-image ">
+                <img class="picture container-image_img" src="./img/communicate/ouch.png" alt="image_communicate">
             </div>
         </div>
         <div class="container">
@@ -189,7 +261,7 @@
     </section>
     <section class="engage">
         <div class="container">
-            <div>
+            <div class="engage_info">
                 <h6 class="info_pretitle info_pretitle-black">
                     Engage Visitors
                 </h6>
@@ -202,25 +274,25 @@
                 <button class="button">
                     Get Started
                 </button>
-                <button class="button button-engage">
+                <button class="button button_white">
                     Learn More
                 </button>
             </div>
             <div class="engage_grid" >
                 <div class="engage_items">
-                    <img src="./img/engage/ouch1.png" alt="face">
+                    <img class="engage_img" src="./img/engage/ouch1.png" alt="face">
                     <p>Developers</p> 
                 </div>
                 <div class="engage_items">
-                    <img src="./img/engage/ouch2.png" alt="TV">
+                    <img class="engage_img" src="./img/engage/ouch2.png" alt="TV">
                     <p>Entertainment</p> 
                 </div>
                 <div class="engage_items">
-                    <img src="./img/engage/ouch3.png" alt="man">
+                    <img class="engage_img" src="./img/engage/ouch3.png" alt="man">
                     <p>Athletes</p>
                 </div>
                 <div class="engage_items">
-                    <img src="./img/engage/ouch4.png" alt="bulb">
+                    <img class="engage_img" src="./img/engage/ouch4.png" alt="bulb">
                    <p>Creators</p> 
                 </div>
             </div>
@@ -235,6 +307,131 @@
             <img class="image_item" src="./img/description/WSJ.png" alt="WSJ">
             <img class="image_item" src="./img/description/Google.png" alt="Google">
         </div>
+    </section>
+    <section class="carusel_trusted">
+        <div class="container">
+            <div class="carusel">
+                <div class="person_items">
+                    <h3 class="carusel_title">
+                        Trusted by the world’s most innovative businesses – big and small
+                    </h3>
+                    <p class="carusel_text">
+                        “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                    </p>
+                    <div class="person_about">
+                        <p class="person_name">
+                            Viella Malkovich
+                        </p>
+                        <p class="person_position">
+                            Creative Director at Johnson
+                        </p>
+                    </div>
+                </div>
+                <div class="person_items">
+                    <h3 class="carusel_title">
+                        Build your own dreams or someone else will hire you to build theirs.
+                    </h3>
+                    <p class="carusel_text">
+                        “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                    </p>
+                    <div class="person_about">
+                        <p class="person_name">
+                            Farrah Gray
+                        </p>
+                        <p class="person_position">
+                            Project Manager
+                        </p>
+                    </div>
+                </div>
+                <div class="person_items">
+                    <h3 class="carusel_title">
+                        Success is one percent inspiration, ninety-nine percent perspiration.
+                    </h3>
+                    <p class="carusel_text">
+                        “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”
+                    </p>
+                    <div class="person_about">
+                        <p class="person_name">
+                            Thomas Edison
+                        </p>
+                        <p class="person_position">
+                            Software Architect
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carusel_img">
+                <img class="carusel_image" src="./img/carusel/ouch.png" alt="balloon">
+            </div>
+        </div>
+    </section>
+    <section id="hiring" class="hiring">
+        <div class="container">
+            <div class="hiring_content">
+                <div>
+                    <h3 class="hiring_title">
+                        We’re hiring
+                    </h3>
+                    <p class="hiring_text">
+                        We’re a team of lifelong learners. We’re equal parts left and right brained.
+                    </p>
+                </div>
+                <button class="button button_about">
+                    More about Company
+                </button>
+            </div>
+            <div>
+                <div class="about_items">
+                    <div class="flex">
+                        <p class="about_title">
+                            Front-End Developer
+                        </p>
+                        <p class="about_pretitle">
+                            Los Angeles / Remote
+                        </p>
+                        <p class="about_icon">
+                            >
+                        </p>
+                    </div>
+                    <p class="about_text">
+                        Everything you need to start building – including open-source code, documentation.
+                    </p>
+                </div>
+                <div class="about_items">
+                    <div class="flex">
+                        <p class="about_title">
+                            Community Manager
+                        </p>
+                        <p class="about_pretitle">
+                            New York / Full-Time
+                        </p>
+                        <p class="about_icon">
+                            >
+                        </p>
+                    </div>
+                    <p class="about_text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A ratione distinctio illo quibusdam assumenda saepe.
+                    </p>
+                </div>
+                <div class="about_items">
+                    <div class="flex">
+                        <p class="about_title">
+                            UX/UI Designer
+                        </p>
+                        <p class="about_pretitle">
+                            New York / Full-Time
+                        </p>
+                        <p class="about_icon">
+                            >
+                        </p>
+                    </div>
+                    <p class="about_text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A ratione distinctio illo quibusdam assumenda saepe.
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </section>
     <section class="surfaces">
         <div class="container">
@@ -256,5 +453,185 @@
         </div>
     </div>
     </section>
+    <section class="trial">
+        <div class="container flex flex_inbox-column">
+            <div class="container-image">
+                <img class="picture container-image_img" src="./img/start trial/puppy.png" alt="image_inbox">
+            </div>
+            <div class="info_trial">
+                <h3 class="info_title-trial">
+                    Start your free trial.
+                </h3>
+                <p class="info_text-trial">
+                    Get notified about company updates, news and blog posts. We hate spam.
+                </p>
+                <div class="trial_check">
+                    <input class="trial_input" type="email" name="email" placeholder="Enter your email">
+                    <button class="button button_trial">
+                        Get Started
+                    </button>
+                </div>
+                <div class="trial_offer flex">
+                    <label class="trial_checkbox">
+                        <input class="offer_checkbox" type="checkbox">
+                        <span class="offer_fake"></span>
+                        <span class="offer_text">Free 14-day trial</span>
+                   </label>
+                    <label class="trial_checkbox">
+                        <input class="offer_checkbox" type="checkbox">
+                        <span class="offer_fake"></span>
+                        <span class="offer_text">Easy setup</span>
+                   </label>
+                    <label class="trial_checkbox">
+                        <input class="offer_checkbox" type="checkbox">
+                        <span class="offer_fake"></span>
+                        <span class="offer_text">Cancel any time. Check out <a href="#">Terms of Use</a> </span>
+                   </label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section class="footer_info">
+            <div class="container">
+                <div class="footer_info-content flex">
+                    <div class="footer_info-logo">
+                        <div class="footer_logo-img flex">
+                            <a href="">
+                                <img class="logo_main-img" src="./img/footer/Icon.svg" alt="logo">
+                            </a>
+                            <div class="footer_logo-content">
+                                <h6 class="footer_logo-title">
+                                    Foundation
+                                </h6>
+                                <p class="footer_logo-text">
+                                    Startup landing template
+                                </p>
+                            </div>
+                        </div>
+                        <p class="footer_info-text">
+                            Foundation is a website template for startups and small teams. It helps to build a website in no time.
+                        </p>
+                        <div class="footer_info_img-all">
+                            <a class="footer_info-img" href="#">
+                                <img src="./img/footer/AppStore.png" alt="AppStore">
+                            </a>
+                            <a class="footer_info-img" href="#">
+                                <img src="./img/footer/Google Play.png" alt="GooglePlay">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer_info-list flex">
+                        <ul class="footer_info-ul">
+                            <h4 class="footer_info-title">
+                                Product
+                            </h4>
+                            <li class="footer_info-li">
+                                <a class="footer_info-link" href="#">
+                                    Acquire Users
+                                </a> 
+                            </li>
+                            <li class="footer_info-li">
+                                <a class="footer_info-link" href="#">
+                                    Content Marketing
+                                </a> 
+                            </li>
+                            <li class="footer_info-li">
+                                <a class="footer_info-link" href="#">
+                                    Website Templates
+                                </a> 
+                            </li>
+                            <li class="footer_info-li">
+                                <a class="footer_info-link" href="#">
+                                    Customer Management
+                                </a>
+                            </li>
+                            <li class="footer_info-li">
+                                <a class="footer_info-link" href="#">
+                                    Virtual Inbox
+                                </a> 
+                            </li>
+                        </ul>
+                        <ul class="footer_info-ul">
+                            <h4 class="footer_info-title">
+                                Company
+                            </h4>
+                            <li class="footer_info-li">
+                                <a class="footer_info-link" href="#">
+                                    About Foundation
+                                </a> 
+                            </li>
+                            <li class="footer_info-li">
+                                <a class="footer_info-link" href="#">
+                                    Brand Guidelines
+                                </a> 
+                            </li>
+                            <li class="footer_info-li">
+                                <a class="footer_info-link" href="#">
+                                    Press Kit
+                                </a> 
+                            </li>
+                            <li class="footer_info-li">
+                                <a class="footer_info-link" href="#">
+                                    Support
+                                </a> 
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <section class="footer_socials">
+            <div class="container flex">
+                <div class="footer_item flex">
+                    <ul class="item_ul flex item_ul-container">
+                        <li class="item_li">
+                            <a class="item_link" href="#">Terms</a>
+                        </li>
+                        <li class="item_li">
+                            <a class="item_link" href="#">Privacy</a>
+                        </li>
+                        <li class="item_li">
+                            <a class="item_link" href="#">License</a>
+                        </li>
+                    </ul>
+                    <div class="footer_socials-content flex">
+                        <a href="#" class="footer_socials-link">
+                            <img class="footer_socials-img" src="./img/footer socials/icon-twitter.png" alt="Twitter">
+                        </a>
+                        <a href="#" class="footer_socials-link">
+                            <img class="footer_socials-img" src="./img/footer socials/icon-fb.png" alt="Facebook">
+                        </a>
+                        <a href="#" class="footer_socials-link">
+                            <img class="footer_socials-img" src="./img/footer socials/LinkedIn.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <div class="modal_overlay">
+        <div class="modal">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident illo beatae reiciendis et nostrum tempora, quo necessitatibus dolorem temporibus harum.
+            </p>
+            <p class="close">
+                x
+            </p>
+        </div>
+    </div>
+    <div id="up">
+        <span>></span>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="./script/bxslider.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/modal.js"></script>
+    <script src="./script/upBotton.js"></script>
 </body>
 </html>
+
+
+
